@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@material-ui/core": "^3.9.2",
     "axios": "^0.18.0",
     "react-scripts": "2.1.5",
     "redux-axios-middleware": "^4.0.0"
   },
   "dependencies": {
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "redux-react-hook": "^3.2.0"
   },
   "scripts": {

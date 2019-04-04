@@ -1,14 +1,18 @@
-export const startFetchingDog = () => ({
-    type: "START_FETCHING_DOG"
-  });
+import { ogApiLink } from "../utils/constants";
   
-  export const successFetchingDog = dog => ({
-    type: "SUCCESS_FETCHING_DOG",
-    dog
-  });
-  
-  export const setDog = dog => ({
-    type: "SET_DOG",
-    dog
-  });
-  
+export function fetchCity(name){
+  return {
+    type: 'FETCH_CITY',
+    payload: {
+      client: 'ogApi',
+      request: {
+        method: 'get',
+        url: ogApiLink(name)
+      }
+    }
+  }
+}
+
+export function resetCity() {
+  return {type: 'RESET_CITY'}
+}

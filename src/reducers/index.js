@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import dog from "./dog";
+import loadedCities from "./loadedCities";
 
 export default combineReducers({
-  dog
+  loadedCities
 });
